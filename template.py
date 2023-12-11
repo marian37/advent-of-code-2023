@@ -1,6 +1,6 @@
 def readInput(fileName):
     file = open(fileName, "r")
-    lines = file.readlines()
+    lines = file.read().splitlines()
     file.close()
     return lines
 
