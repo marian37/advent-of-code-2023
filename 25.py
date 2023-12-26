@@ -34,7 +34,7 @@ def remove_edge(vertices, edges, e):
 
 def contract(vertices, edges):
     while len(vertices) > 2:
-        idx = randrange(len(edges))
+        idx = randrange(len(edges) // 2)
         e = edges[idx]
         vertices, edges = remove_edge(vertices, edges, e)
     return vertices, edges
